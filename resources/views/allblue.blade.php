@@ -98,7 +98,6 @@
                 <!-- <p>Build with Laravel</p> -->
                 <h2>Build With Laravel 5</h2>
                 <p><b>Contact : info@allblue.technology</b></p>
-
             </div>
         
         <script type="text/javascript">
