@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('allblue');
 });
 Route::get('halaman', 'Halaman@show');
+Route::get('editor', 'Halaman@editor');

@@ -17,4 +17,8 @@ class Halaman extends Controller
     {
         return view('halaman');
     }
+    public function editor()
+    {
+      return view('editor');
+    }
 }
