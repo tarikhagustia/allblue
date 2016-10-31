@@ -83,23 +83,23 @@
             <div class="container content" id="content">
                 <div class="row">
                     <div class="col-sm-12">
-                       <h1 class="title">Allblue Technology</h1> 
-                        
+                       <h1 class="title">Allblue Technology</h1>
+
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                        <h1 class="title">
                            <div id="getting"></div>
-                       </h1> 
-                        
+                       </h1>
+
                     </div>
                 </div>
                 <!-- <p>Build with Laravel</p> -->
                 <h2>Build With Laravel 5</h2>
                 <p><b>Contact : info@allblue.technology</b></p>
             </div>
-        
+
         <script type="text/javascript">
           $("#getting")
           .countdown("2016/10/31", function(event) {

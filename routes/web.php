@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('allblue');
-});
+// Route::get('/', function () {
+//     return view('allblue');
+// });
 
-Route::get('halaman', 'Halaman@show');
-
+Route::get('/', 'Halaman@show');
+Route::post('/email/new', 'SendEmail@send');
