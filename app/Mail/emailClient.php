@@ -28,6 +28,6 @@ class emailClient extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        $this->view('email.contoh');
     }
 }

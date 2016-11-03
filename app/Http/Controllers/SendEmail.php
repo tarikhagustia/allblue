@@ -1,24 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Http\Requests;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\emailClient;
 
 class sendEmail extends Controller
 {
-    //
-    public function send(Request $request)
+    public function send()
     {
-      // dd($request->nama_anda);
-      $data = [
-        'email_name' => $request->nama_anda,
-        'email_to' => $request->email_anda,
-        'email_text' => $request->catatan
-      ];
-      DB::table('new_table')->insert($data);
-      //  $users = DB::select('select * from new_table');
-      //  var_dump($users);
+      Mail::to('agustia.tarikh150@gmail.com')->send(new emailClient('Tarikh'));
     }
 }
