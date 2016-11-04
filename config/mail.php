@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => 'tarikh@si.co.id',
-        'name' => 'Tarikh Agustia',
+        'address' => 'info@allblue.technology',
+        'name' => 'Allblue Technology',
     ],
 
     /*
