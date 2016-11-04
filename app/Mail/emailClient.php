@@ -16,9 +16,11 @@ class emailClient extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $order;
+    public function __construct($order)
     {
-        //
+        $this->order = $order;
+        var_dump($order);
     }
 
     /**
@@ -28,6 +30,8 @@ class emailClient extends Mailable
      */
     public function build()
     {
-        $this->view('email.contoh');
+      return $this->subject('Allblue User Contacts')->view('email.contoh')->with([
+                        'data' => $this->order,
+                    ]);
     }
 }

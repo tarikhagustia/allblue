@@ -8,6 +8,11 @@ class sendEmail extends Controller
 {
     public function send()
     {
-      Mail::to('fyunus70@gmail.com')->send(new emailClient('Allblue Technology'));
+      $data = [
+        'nama' => 'Nama Client',
+        'email' => 'Email Client',
+        'catatan' => 'Catatan'
+      ];
+      Mail::to('agustia.tarikh150@gmail.com')->send(new emailClient($data));
     }
 }
