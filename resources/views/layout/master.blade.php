@@ -8,9 +8,9 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/myawesome.css" type="text/css" rel="stylesheet"/>
+  <link href="/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/myawesome.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
   <nav class="light-blue lighten-3" role="navigation">
@@ -18,16 +18,16 @@
       <a id="logo-container" href="#" class="brand-logo">
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#contact">Hubungi Kami</a></li>
-        <li><a href="#siapa-kami">Tentang Kami</a></li>
+        <li><a href="{{ url('/') }}">Home</a></li>
+        <li><a class="scrool" href="#contact">Hubungi Kami</a></li>
+        <li><a class="scrool" href="#siapa-kami">Tentang Kami</a></li>
 
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#contact">Hubungi Kami</a></li>
-        <li><a href="#siapa-kami">Tentang Kami</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Hubungi Kami</a></li>
+        <li><a href="">Tentang Kami</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -65,13 +65,13 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/jquery.matchHeight-min.js"></script>
-  <script src="js/init.js"></script>
+  <script src="/js/materialize.min.js"></script>
+  <script src="/js/jquery.matchHeight-min.js"></script>
+  <script src="/js/init.js"></script>
   <script>
   $(document).ready(function(){
     $('.sample').matchHeight();
-    $(document).on('click', 'a', function(event){
+    $(document).on('click', 'a[class=scrool]', function(event){
     event.preventDefault();
 
     $('html, body').animate({

@@ -9,7 +9,7 @@
         <br><br>
         <h1 class="header center light-blue-text text-lighten-1">Allblue Technology</h1>
         <div class="row center">
-          <h5 class="header col s12">Solusi Digital untuk bisnis anda</h5>
+          <h5 class="header col s12">Solusi Digital untuk bisnis andas</h5>
         </div>
         <div class="row center">
           <a href="#have" id="download-button" class="btn-large waves-effect waves-light light-blue">Lihat apa yang kita punya</a>
